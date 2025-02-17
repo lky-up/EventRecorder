@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Timeline.AboutPage">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <Label x:Name="PreStr" Text="当前的偏好列表为：这些偏好将会按照顺序显示到小组件内。最多显示4个。" />
+        
+        <Button Text="清空所有数据"
+                Clicked="CleanAllData"
+            >
+        </Button>
+
+        <Label Text="APP帮助用户自定义事件，并一键记录事件发生时间。" />
+    </VerticalStackLayout>
+</ContentPage>

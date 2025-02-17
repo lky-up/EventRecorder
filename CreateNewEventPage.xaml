@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Timeline.CreateNewEventPage"
+             Title="CreateNewEventPage">
+    <VerticalStackLayout Padding="20">
+        <Label Text="创建新事件" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry x:Name="EventName" Placeholder="事件名称" />
+        <Entry x:Name="EventValue" Placeholder="设置默认值" />
+        <Entry x:Name="EventDescribe" Placeholder="说明"  />
+        <HorizontalStackLayout HorizontalOptions="Start" VerticalOptions="Center">
+            <Label Text="偏好" FontSize="18" VerticalOptions="Center" />
+            <Switch x:Name="PreferenceSwitch" IsToggled="False" />
+        </HorizontalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="提交" Clicked="OnSubmitClicked" Grid.Column="0" HorizontalOptions="Center" />
+            <Button Text="取消" Clicked="OnCancelClicked" Grid.Column="1" HorizontalOptions="Center" />
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>
+
+

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="1">
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:label="事件记录器">
+		<!-- <receiver android:name=".MyAppWidgetProvider"> -->
+		<!-- <intent-filter> -->
+		<!-- <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> -->
+		<!-- </intent-filter> -->
+		<!-- <meta-data -->
+		<!-- android:name="android.appwidget.provider" -->
+		<!-- android:resource="@xml/widget_info"/> -->
+		<!-- </receiver> -->
+		<receiver android:name=".MyBroadcastReceiver" />
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+	<uses-sdk />
+</manifest>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Timeline.MainPage">
+
+
+    <VerticalStackLayout Spacing="10" Margin="5">
+        <Image
+            Source="dotnet_bot.png"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+
+        <ScrollView>
+            <Grid x:Name="DynamicGrid" VerticalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                
+            </Grid>
+        </ScrollView>
+
+        <Label x:Name="MessageLabel" 
+            Text="" 
+            TextColor="Red" 
+            HorizontalOptions="Center" 
+            VerticalOptions="End" 
+            IsVisible="False" 
+            FontSize="24"
+            FontAttributes="Bold"
+            FontFamily="Arial"
+            Margin="0,0,0,20" />
+
+
+    </VerticalStackLayout>
+
+
+</ContentPage>
